@@ -12,7 +12,7 @@ class Dashboard extends Component {
     const { fireStore, firebase } = this.props;
 
     
-    if(firebase.auth.uid){
+    if(fireStore && !firebase.auth.uid){
     return (
       <div className="container">
         <div className="row">

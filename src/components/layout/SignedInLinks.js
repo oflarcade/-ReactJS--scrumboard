@@ -11,7 +11,8 @@ class SignInLinks extends React.Component {
         this.props.history.push('/signin');
     }
   render() {
-      return (<ul className="right">
+      return (
+      <ul className="right hide-on-med-and-down">
           <li>
               <NavLink to="/newBoard">New ScrumBoard</NavLink>
           </li>
